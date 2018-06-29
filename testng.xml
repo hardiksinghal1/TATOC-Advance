@@ -1,0 +1,12 @@
+<suite name="Any Name">
+
+ <test name="Any Name" >
+
+ <classes> 
+ 	<class name="test.AppTest" />
+	
+ </classes>
+
+ </test>
+
+ </suite>

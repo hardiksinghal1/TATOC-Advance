@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Any Name" duration-ms="4260" started-at="2018-06-27T09:08:19Z" finished-at="2018-06-27T09:08:23Z">
+    <groups>
+    </groups>
+    <test name="Any Name" duration-ms="4260" started-at="2018-06-27T09:08:19Z" finished-at="2018-06-27T09:08:23Z">
+      <class name="test.AppTest">
+        <test-method status="PASS" signature="openHomePage()[pri:0, instance:test.AppTest@cb5822]" name="openHomePage" is-config="true" duration-ms="1770" started-at="2018-06-27T14:38:19Z" finished-at="2018-06-27T14:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openHomePage -->
+        <test-method status="PASS" signature="firstPage()[pri:0, instance:test.AppTest@cb5822]" name="firstPage" duration-ms="158" started-at="2018-06-27T14:38:21Z" finished-at="2018-06-27T14:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPage -->
+        <test-method status="PASS" signature="SecondPage()[pri:0, instance:test.AppTest@cb5822]" name="SecondPage" duration-ms="2312" started-at="2018-06-27T14:38:21Z" depends-on-methods="test.AppTest.firstPage" finished-at="2018-06-27T14:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondPage -->
+        <test-method status="PASS" signature="closeHomePage()[pri:0, instance:test.AppTest@cb5822]" name="closeHomePage" is-config="true" duration-ms="0" started-at="2018-06-27T14:38:23Z" finished-at="2018-06-27T14:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeHomePage -->
+      </class> <!-- test.AppTest -->
+    </test> <!-- Any Name -->
+  </suite> <!-- Any Name -->
+</testng-results>
