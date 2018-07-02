@@ -9,6 +9,8 @@
           <include name="closeHomePage"/>
           <include name="openHomePage"/>
           <include name="firstPage"/>
+          <include name="fourthPage"/>
+          <include name="thirdPage"/>
         </methods>
       </class> <!-- test.AppTest -->
     </classes>

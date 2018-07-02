@@ -9,8 +9,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import action.FileHandle;
 import action.HoverMenu;
 import action.QueryGate;
+import action.Restful;
 
 public class AppTest
 {
@@ -31,6 +33,19 @@ public class AppTest
 	public void SecondPage() throws ClassNotFoundException, SQLException {
 		QueryGate querygate = new QueryGate(driver);
 		querygate.getCredentials();
+	}
+	
+	@Test(dependsOnMethods = { "SecondPage" })
+	public void thirdPage(){
+		driver.get("http://10.0.1.86/tatoc/advanced/rest");
+		Restful rest = new Restful(driver);
+		rest.clickGoNext();
+	}
+	
+	@Test(dependsOnMethods = { "thirdPage" })
+	public void fourthPage(){
+		FileHandle filehandle = new FileHandle(driver);
+		filehandle.submitSignature();
 	}
 	
 	@BeforeClass()

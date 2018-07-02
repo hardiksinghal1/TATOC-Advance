@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,6 +107,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Any_Name" title="test.AppTest" hash-for-method="firstPage">firstPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Any_Name" title="test.AppTest" hash-for-method="fourthPage">fourthPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Any_Name" title="test.AppTest" hash-for-method="thirdPage">thirdPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Any_Name -->
@@ -139,6 +149,20 @@
                   <a name="firstPage">
                   </a> <!-- firstPage -->
                   <span class="method-name">firstPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fourthPage">
+                  </a> <!-- fourthPage -->
+                  <span class="method-name">fourthPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="thirdPage">
+                  </a> <!-- thirdPage -->
+                  <span class="method-name">thirdPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,20 +219,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SecondPage')
+data.setCell(0, 1, 'fourthPage')
 data.setCell(0, 2, 'test.AppTest')
-data.setCell(0, 3, 2312);
+data.setCell(0, 3, 5273);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'firstPage')
+data.setCell(1, 1, 'SecondPage')
 data.setCell(1, 2, 'test.AppTest')
-data.setCell(1, 3, 158);
+data.setCell(1, 3, 2982);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'thirdPage')
+data.setCell(2, 2, 'test.AppTest')
+data.setCell(2, 3, 331);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'firstPage')
+data.setCell(3, 2, 'test.AppTest')
+data.setCell(3, 3, 151);
 window.suiteTableData['Any_Name']= { tableData: data, tableDiv: 'times-div-Any_Name'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Any_Name">
               </div> <!-- times-div-Any_Name -->
             </div> <!-- times-div -->
@@ -241,15 +273,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">firstPage</span>
-                <span class="method-start">1773 ms</span>
+                <span class="method-start">2093 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SecondPage</span>
-                <span class="method-start">1938 ms</span>
+                <span class="method-start">2247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">thirdPage</span>
+                <span class="method-start">5231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fourthPage</span>
+                <span class="method-start">5564 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeHomePage</span>
-                <span class="method-start">4251 ms</span>
+                <span class="method-start">10838 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

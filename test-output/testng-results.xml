@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Any Name" duration-ms="4260" started-at="2018-06-27T09:08:19Z" finished-at="2018-06-27T09:08:23Z">
+  <suite name="Any Name" duration-ms="10846" started-at="2018-07-02T10:33:00Z" finished-at="2018-07-02T10:33:11Z">
     <groups>
     </groups>
-    <test name="Any Name" duration-ms="4260" started-at="2018-06-27T09:08:19Z" finished-at="2018-06-27T09:08:23Z">
+    <test name="Any Name" duration-ms="10846" started-at="2018-07-02T10:33:00Z" finished-at="2018-07-02T10:33:11Z">
       <class name="test.AppTest">
-        <test-method status="PASS" signature="openHomePage()[pri:0, instance:test.AppTest@cb5822]" name="openHomePage" is-config="true" duration-ms="1770" started-at="2018-06-27T14:38:19Z" finished-at="2018-06-27T14:38:21Z">
+        <test-method status="PASS" signature="openHomePage()[pri:0, instance:test.AppTest@1d057a39]" name="openHomePage" is-config="true" duration-ms="2090" started-at="2018-07-02T16:03:00Z" finished-at="2018-07-02T16:03:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openHomePage -->
-        <test-method status="PASS" signature="firstPage()[pri:0, instance:test.AppTest@cb5822]" name="firstPage" duration-ms="158" started-at="2018-06-27T14:38:21Z" finished-at="2018-06-27T14:38:21Z">
+        <test-method status="PASS" signature="firstPage()[pri:0, instance:test.AppTest@1d057a39]" name="firstPage" duration-ms="151" started-at="2018-07-02T16:03:02Z" finished-at="2018-07-02T16:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstPage -->
-        <test-method status="PASS" signature="SecondPage()[pri:0, instance:test.AppTest@cb5822]" name="SecondPage" duration-ms="2312" started-at="2018-06-27T14:38:21Z" depends-on-methods="test.AppTest.firstPage" finished-at="2018-06-27T14:38:23Z">
+        <test-method status="PASS" signature="SecondPage()[pri:0, instance:test.AppTest@1d057a39]" name="SecondPage" duration-ms="2982" started-at="2018-07-02T16:03:03Z" depends-on-methods="test.AppTest.firstPage" finished-at="2018-07-02T16:03:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondPage -->
-        <test-method status="PASS" signature="closeHomePage()[pri:0, instance:test.AppTest@cb5822]" name="closeHomePage" is-config="true" duration-ms="0" started-at="2018-06-27T14:38:23Z" finished-at="2018-06-27T14:38:23Z">
+        <test-method status="PASS" signature="thirdPage()[pri:0, instance:test.AppTest@1d057a39]" name="thirdPage" duration-ms="331" started-at="2018-07-02T16:03:06Z" depends-on-methods="test.AppTest.SecondPage" finished-at="2018-07-02T16:03:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdPage -->
+        <test-method status="PASS" signature="fourthPage()[pri:0, instance:test.AppTest@1d057a39]" name="fourthPage" duration-ms="5273" started-at="2018-07-02T16:03:06Z" depends-on-methods="test.AppTest.thirdPage" finished-at="2018-07-02T16:03:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fourthPage -->
+        <test-method status="PASS" signature="closeHomePage()[pri:0, instance:test.AppTest@1d057a39]" name="closeHomePage" is-config="true" duration-ms="0" started-at="2018-07-02T16:03:11Z" finished-at="2018-07-02T16:03:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeHomePage -->
